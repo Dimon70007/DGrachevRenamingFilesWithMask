@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.dgrachev.GUISearchForm">
+  <grid id="27dc6" binding="RenamingFilesByMask" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="515" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="66354" layout-manager="GridBagLayout">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="etched" title="Select the word's parameters"/>
+        <children>
+          <component id="71556" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Word contains:"/>
+            </properties>
+          </component>
+          <component id="6a79f" class="javax.swing.JTextField" binding="contains">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <columns value="15"/>
+              <text value="^[0-9]"/>
+            </properties>
+            <clientProperties>
+              <caretAspectRatio class="java.lang.Float" value="0.04"/>
+            </clientProperties>
+          </component>
+          <component id="b761f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Path to find"/>
+            </properties>
+          </component>
+          <component id="bf340" class="javax.swing.JTextField" binding="pathToFind">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <columns value="0"/>
+            </properties>
+            <clientProperties>
+              <caretAspectRatio class="java.lang.Float" value="0.04"/>
+            </clientProperties>
+          </component>
+          <component id="3e3c" class="javax.swing.JButton" binding="DeleteFiles">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <foreground color="-2019023"/>
+              <text value="Delete files"/>
+            </properties>
+          </component>
+          <component id="5a11b" class="javax.swing.JButton" binding="RenameFiles">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Rename files"/>
+            </properties>
+          </component>
+          <component id="9093" class="javax.swing.JButton" binding="FindFiles">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Find files"/>
+            </properties>
+            <clientProperties>
+              <hideActionText class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="9d7b8">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <enabled value="true"/>
+          <horizontalScrollBarPolicy value="31"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="86e13" class="javax.swing.JTextArea" binding="FoundFiles">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <lineWrap value="true"/>
+              <wrapStyleWord value="true"/>
+            </properties>
+            <clientProperties>
+              <caretAspectRatio class="java.lang.Float" value="0.04"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
